@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get '/hello_world', to: 'static#hello_world'
     get '/posts/:id', to: 'posts#show'
 
+    resources :posts, only: :show
+
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
