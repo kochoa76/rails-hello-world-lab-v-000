@@ -48,3 +48,5 @@ Processing by StaticController#hello_world as HTML
 Completed 200 OK in 398ms (Views: 386.4ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (28.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
