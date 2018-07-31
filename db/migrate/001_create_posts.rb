@@ -1,4 +1,4 @@
-class Post < ActiveRecord::Migration
+class CreatePost < ActiveRecord::Migration
 
   def change
     create_table :posts do |t|
