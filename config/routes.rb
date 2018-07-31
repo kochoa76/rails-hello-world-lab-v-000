@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 
   get '/hello_world', to: 'static#hello_world'
+    get '/posts/:id', to: 'posts#show'
 
 
 
