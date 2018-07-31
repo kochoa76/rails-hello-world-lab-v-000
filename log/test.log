@@ -188,3 +188,13 @@ Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms)
 Started GET "/hello_world" for 127.0.0.1 at 2018-07-31 01:49:51 +0000
 Processing by StaticController#hello_world as HTML
   Rendered static/hello_world.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 212ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description") VALUES (?, ?)[0m  [["title", "My Post"], ["description", "My post desc"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/posts/1" for 127.0.0.1 at 2018-07-31 01:49:51 +0000
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
