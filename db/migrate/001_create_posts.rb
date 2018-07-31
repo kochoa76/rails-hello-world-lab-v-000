@@ -6,4 +6,4 @@ class CreatePost < ActiveRecord::Migration
       t.string :description
     end
   end
-end 
+end
